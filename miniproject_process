@@ -1,0 +1,3 @@
+1. Open jsonl data-file with: with jsonlines.open("data/train.jsonl", mode='r') as reader:
+
+2. 
