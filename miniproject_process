@@ -1,3 +1,27 @@
-1. Open jsonl data-file with: with jsonlines.open("data/train.jsonl", mode='r') as reader:
+Use this link for very helpful advice and methods: https://www.nltk.org/book/ch03.html
 
-2. 
+
+
+
+1. Open jsonl data-file with: 
+
+    with jsonlines.open("data/train.jsonl", mode='r') as doc:
+
+
+
+2. Tokenize, normalize and build vocabulary:
+    
+    tokens = word_tokenize(raw)
+    type(tokens)
+
+    <class 'list'>
+
+    words = [w.lower() for w in tokens]
+    type(words)
+
+    <class 'list'>
+
+    vocab = sorted(set(words))
+    type(vocab)
+
+    <class 'list'>
