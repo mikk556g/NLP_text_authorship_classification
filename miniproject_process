@@ -27,6 +27,17 @@ Use this link for very helpful advice and methods: https://www.nltk.org/book/ch0
     <class 'list'>
 
 
-    Another normalization task involves identifying non-standard words including numbers, abbreviations, and dates, 
-    and mapping any such tokens to a special vocabulary. For example, every decimal number could be mapped to a single token 0.0, 
-    and every acronym could be mapped to AAA. This keeps the vocabulary small and improves the accuracy of many language modeling tasks.
+    Another normalization task involves identifying non-standard words including numbers, 
+    abbreviations, and dates, and mapping any such tokens to a special vocabulary. 
+    For example, every decimal number could be mapped to a single token 0.0, and every acronym
+    could be mapped to AAA. This keeps the vocabulary small and improves the accuracy of many 
+    language modeling tasks.
+
+
+- Stemming
+
+- Lemmatization
+
+- n-grams
+
+- POS tags
