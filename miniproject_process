@@ -41,3 +41,19 @@ Use this link for very helpful advice and methods: https://www.nltk.org/book/ch0
 - n-grams
 
 - POS tags
+
+
+
+POS tagging:
+- Each token in a datapoint/sentence would have a POS tag. 
+- Each datapoint/sentence would then have a vector/list with 12 entries, one for each POS tag.
+- So there would be a column in the dataframe called POS tags, and for each datapoint there
+  would be a vector/list with 12 elements like e.g. [0, 2, 0, 1, 4, 1, 0, 0, 0, 1, 0, 1] showing 
+  how many of each POS tag is present in that datapoint. 
+
+
+pos_vectors = []
+
+for sentence in sentences:
+    for token in sentence:
+        
