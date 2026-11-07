@@ -1,7 +1,43 @@
+How to build a vocabulary from a given text.
+    ● Pro tip: Look at % unknown tokens in the dev set. 
+
+
+
+Examine your Vocabulary (e.g., sort by frequency, alphabet, etc.).
+    a. What kinds of words do you see?
+    b. Does your text normalization seem to work well? Why or why not?
+    c. Are there marked differences between human_Vocab and
+       machine_Vocab?
+    d. What % of tokens were seen in train but not dev?
+    e. What other observations can you make?
+
+
+
+
+The NLP pipeline differs from LM’ing to Classification
+    ● Aggressive text normalization (lemmatization, stemming) and stop words
+      removal would render an LM useless!
+        ○ We need to predict sequences like “in the” “the classroom”
+
+    ● But for many common classification tasks, these pre-processing steps make
+      learning a classifier easier, by reducing the feature space.
+        ○ We often don’t need stopwords like “in” “the”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Use this link for very helpful advice and methods: https://www.nltk.org/book/ch03.html
-
-
-
 
 1. Open jsonl data-file with: 
 
