@@ -1,8 +1,3 @@
-How to build a vocabulary from a given text.
-    ● Pro tip: Look at % unknown tokens in the dev set. 
-
-
-
 Examine your Vocabulary (e.g., sort by frequency, alphabet, etc.).
     a. What kinds of words do you see?
     b. Does your text normalization seem to work well? Why or why not?
@@ -10,6 +5,21 @@ Examine your Vocabulary (e.g., sort by frequency, alphabet, etc.).
        machine_Vocab?
     d. What % of tokens were seen in train but not dev?
     e. What other observations can you make?
+
+
+
+NOTE: When I'm creating the POS vectors, I'm using the counts of each POS tag for a given datapoint/sentence. 
+I might want to do some normalization to account for sentence length. Because abviously the longer a sentence is,
+the more POS tags it's gonna have. 
+
+What I should probably do here instead, is to use the percentage fraction for each POS tag. So how much of a given sentence
+consists of e.g. 'Nouns'. So instead of having raw counts for each POS tag, I'm gonna have a decimal number of how much of
+the sentence consists of Nouns. 
+
+Example:
+['.', 'ADJ', 'ADP', 'ADV', 'CONJ', 'DET', 'NOUN', 'NUM', 'PRON', 'PRT', 'VERB', 'X']
+[0, 50, 6, 7, 0, 0, 112, 0, 1, 3, 47, 0]
+
 
 
 
